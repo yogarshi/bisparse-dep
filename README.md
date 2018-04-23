@@ -20,10 +20,10 @@ Additionally, each dataset folder also contains `hyperparams.txt` which gives th
 # Scripts
 - `balAPinc_multi_test.py` - Given a list of cross-lingual word pairs, and two cross-lingual word vector files (one per language), generate balAPinc scores for the word pairs
     - Syntax : `python scripts/balAPinc_multi_test.py <en-word-vectors> <non-en-word-vectors> <word-pairs-file> 0 <balAPinc-parameter> --prefix <optional prefix for output file> `, where
-        -  <en-word-vectors> ::= File containing word vectors for English
-        -  <non-en-word-vectors> ::= File containing word vectors for the other language
-        -  <word-pairs-file> ::= List of (non-English, English) word pairs, with gold label (1 = English word is a hypernym of the non-English word, 0 = otherwise)
-        -  <balAPinc-parameter> ::= How many features to include while calculating balAPinc? (Integer between 0 and 100, inclusive)
+        -  `<en-word-vectors>` ::= File containing word vectors for English
+        -  `<non-en-word-vectors>` ::= File containing word vectors for the other language
+        -  `<word-pairs-file>` ::= List of (non-English, English) word pairs, with gold label (1 = English word is a hypernym of the non-English word, 0 = otherwise)
+        -  `<balAPinc-parameter>` ::= How many features to include while calculating balAPinc? (Integer between 0 and 100, inclusive)
     -  Output : Input file, with a balAPinc score appended at the end of each line
     -  Example usage : `python scripts/balAPinc_multi_test.py pre-trained-vecs/hyper-hypo/ar-en.en.dep_1000.txt.gz pre-trained-vecs/hyper-hypo/ar-en.ar.dep_1000.txt.gz data/hyper-hypo/ar_tune.txt 0 100`
 -  ` balAPinc_classification.py` - Given tune and test files, generate classification scores
