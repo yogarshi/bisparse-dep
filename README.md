@@ -28,8 +28,8 @@ Additionally, each dataset folder also contains `hyperparams.txt` which gives th
     -  Example usage : `python scripts/balAPinc_multi_test.py pre-trained-vecs/hyper-hypo/ar-en.en.dep_1000.txt.gz pre-trained-vecs/hyper-hypo/ar-en.ar.dep_1000.txt.gz data/hyper-hypo/ar_tune.txt 0 100`
 -  ` balAPinc_classification.py` - Given tune and test files, generate classification scores
     -  Syntax : `python scripts/balAPinc_classification.py --training <tune-word-file-with-scores> --test <test-word-file-with-scores>`, where
-        - <tune-word-file-with-scores> ::= Output of `balAPinc_multi_test.py` when run on tuning data
-        - <test-word-file-with-scores> ::= Output of `balAPinc_multi_test.py` when run on test data
+        - `<tune-word-file-with-scores>` ::= Output of `balAPinc_multi_test.py` when run on tuning data
+        - `<test-word-file-with-scores>` ::= Output of `balAPinc_multi_test.py` when run on test data
 - `generate_results.sh` - Run this to generate the results reported in the paper (currently generates all BiSparse-Dep (Full, Joint, Delex, Unlabeled) results in Tables 3a, 3b, and 4 )
 
 Scripts to train vectors will be available soon. For now, you can use the scripts from our [prior work](https://github.com/yogarshi/bisparse) if needed.
